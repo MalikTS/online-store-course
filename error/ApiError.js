@@ -1,10 +1,10 @@
-class ApiError extends Error {
+class ApiError extends Error{
     constructor(status, message) {
         super(); // вызов род. конструктор с помощью super
         this.status = status
         this.message = message
     }
-        // статические функции - это функции которые можно вызывать без создания объекта
+    // статические функции - это функции которые можно вызывать без создания объекта
     static badRequest(message) {
         return new ApiError(404, message)
     }
@@ -19,3 +19,8 @@ class ApiError extends Error {
 }
 
 module.exports = ApiError
+
+
+
+
+

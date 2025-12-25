@@ -9,3 +9,5 @@ DB_PASSWORD==root
 DB_HOST=localhost
 
 DB_PORT=5432
+
+SECRET_KEY=random_secret_key123

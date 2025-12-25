@@ -10,5 +10,4 @@ router.use('/type', typeRouter)
 router.use('/brand', brandRouter)
 router.use('/device', deviceRouter)
 
-
 module.exports = router

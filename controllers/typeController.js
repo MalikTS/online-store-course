@@ -1,5 +1,5 @@
-const {Type} = require('../models/models.js')
-const ApiError = require('../error/ApiError.js')
+const {Type} = require('../models/models')
+const ApiError = require('../error/ApiError');
 
 class TypeController {
     async create(req, res) {
@@ -12,6 +12,7 @@ class TypeController {
         const types = await Type.findAll()
         return res.json(types)
     }
+
 }
 
 module.exports = new TypeController()
